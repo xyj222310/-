@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="com" namespace="/" extends="struts-default">
+		<action name="upload"
+			class="com.myproject.action.TagsAction" method="execute_upload">
+			<result name="fail">/Fail.jsp</result>
+			<result name="upload_success">/success.jsp</result>		
+		</action>
+		<action name="download"
+			class="com.myproject.action.TagsAction" method="execute_download">
+			<result name="fail">/Fail.jsp</result>
+			<result name="download_success">/success.jsp</result>		
+		</action>
+		<action name="log"
+			class="com.myproject.action.TagsAction" method="execute_log">
+			<result name="fail">/Fail.jsp</result>
+			<result name="log_success">/FirstPage.jsp</result>		
+		</action>
+	</package>
+</struts>    

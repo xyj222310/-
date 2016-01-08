@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="com" location="228,161" size="226,183">
+    <action name="upload" location="71,36" size="150,62">
+      <result name="fail">
+        <resourceEdge source="fail" routing="0" target="Fail.jsp" />
+      </result>
+      <result name="upload_success">
+        <resourceEdge source="upload_success" routing="0" target="success.jsp" />
+      </result>
+    </action>
+    <action name="download" location="16,116" size="150,62">
+      <result name="fail">
+        <resourceEdge source="fail" routing="0" target="Fail.jsp" />
+      </result>
+      <result name="download_success">
+        <resourceEdge source="download_success" routing="0" target="success.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="Fail.jsp" path="/Fail.jsp" location="200,50" size="150,55" />
+  <webResource name="success.jsp" path="/success.jsp" location="500,50" size="150,55" />
+</Struts2Diagram>
+
